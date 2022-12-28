@@ -3,6 +3,8 @@ permalink: /about/
 title: "About"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+I am Dan Volovyk, a programmer with a passion for technology and a love for experimentation. I received my Master's degree from the Faculty of Intelligent Decision Making Systems, and have since become an expert in .NET and Microsoft Dynamics 365. I am also a professional in Azure, and have obtained several certificates from Microsoft to further enhance my skills and knowledge in the field.
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+Throughout my career, I have always been drawn to working with new technologies and finding creative solutions to complex problems. I am a true innovator, always looking for ways to push the boundaries of what is possible with software development.
+
+As a result of my dedication and expertise, I have become a respected member of the tech community, and am often sought after by companies looking to leverage my skills and insights. Whether I am working on a new project or collaborating with colleagues, I approach each day with enthusiasm and a drive to learn and grow.
