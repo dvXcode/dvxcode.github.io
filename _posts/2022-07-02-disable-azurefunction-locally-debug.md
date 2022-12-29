@@ -30,7 +30,7 @@ Here is an example of what the local.settings.json file might look like with two
     "Function2": "true"
   }
 }
-
+```
 With this configuration, the functions named "Function1" and "Function2" will be disabled while debugging locally. All other functions will remain enabled.
 
 Note that this method only works for debugging locally, and will not affect the deployment of your Azure Functions to the cloud. To disable functions in the cloud, you can use the Azure portal or the Azure Functions CLI to disable or enable individual functions.
