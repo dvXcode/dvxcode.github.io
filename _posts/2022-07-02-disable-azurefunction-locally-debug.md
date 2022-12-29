@@ -18,7 +18,6 @@ Locate the "Values" setting and add a new key-value pair for each function you w
 Here is an example of what the local.settings.json file might look like with two functions disabled:
 
 ```cs
-// Bad
 {
   "IsEncrypted": false,
   "Values": {
