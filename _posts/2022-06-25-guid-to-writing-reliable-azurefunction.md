@@ -70,5 +70,13 @@ Don't hardcode sensitive information: It is a security best practice to avoid ha
 
 Don't use large dependencies: Azure Functions are designed to be lightweight and efficient, so it is generally not a good idea to include large dependencies in your functions. This can increase the size of your deployment package and slow down the execution of your functions. Instead, consider using smaller libraries or writing custom code to achieve the same functionality.
 
+Timeouts:  It's important to keep in mind the potential for timeout issues caused by large, long-running functions. To avoid these issues, consider breaking up your functions into smaller, more focused sets that can work together and return responses quickly. This is especially important for webhooks and HTTP trigger functions, which often require an immediate response.
+
+One way to achieve this is by using storage queues for cross-function communication. These queues are a cost-effective and easy-to-use solution for passing messages between functions. It's worth noting, however, that individual messages in a storage queue are limited to 64 KB in size. If you need to pass larger messages, you may want to consider using an Azure Service Bus queue or Event Hub.
+
+Another option to consider is using Durable Functions or Azure Logic Apps to manage state transitions and communication between multiple functions. This can be particularly useful if you need to coordinate the execution of multiple functions or need to maintain state across function invocations.
+
+Ultimately, the key to avoiding timeout issues is to keep your functions focused and efficient, and to carefully consider the best approach for managing communication and coordination between them.
+
 By following these best practices and avoiding common pitfalls, you can ensure that your Azure Functions are reliable, efficient, and easy to maintain.
 
