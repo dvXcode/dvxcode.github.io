@@ -9,7 +9,7 @@ search: true
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
-permalink: /blog/:year/:month/:title/
+# permalink removed to avoid basename key errors, use default post permalinks or set per-collection
 paginate: 5
 paginate_path: /blog/page:num/
 timezone: Europe/Oslo
@@ -18,7 +18,7 @@ timezone: Europe/Oslo
 collections:
   products:
     output: true
-    permalink: /products/:basename/
+    permalink: /products/:slug/
 
 # Include pages folder
 include:
