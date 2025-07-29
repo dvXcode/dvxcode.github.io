@@ -6,6 +6,8 @@ github_username: dvXcode
 minimal_mistakes_skin: air
 search: true
 
+permalink: /:basename/
+
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
@@ -18,7 +20,7 @@ timezone: Europe/Oslo
 collections:
   products:
     output: true
-    permalink: /:basename/
+    permalink: /products/:slug/
 
 # Include pages folder
 include:
