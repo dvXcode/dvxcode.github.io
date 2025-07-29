@@ -1,0 +1,34 @@
+name: Build & Deploy Jekyll Site
+
+on:
+  push:
+    branches: ["master"]      # your default branch
+  workflow_dispatch:          # optional manual trigger
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: https://volovyk.dev
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Build Jekyll Site for GitHub Pages
+        uses: actions/build-jekyll-for-github-pages@v2
+        with:
+          # directory to publish; leave blank for default (_site)
+          destination: public
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages      # or omit to use default
+          publish_dir: ./public
