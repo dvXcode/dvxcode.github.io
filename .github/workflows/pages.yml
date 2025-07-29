@@ -1,0 +1,35 @@
+name: Build & Deploy Jekyll site
+
+on:
+  push:
+    branches: ["master"]      # or your default branch
+  workflow_dispatch:          # lets you trigger manually
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.x"      # match your local Ruby
+
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle config set path vendor/bundle
+          bundle install
+
+      - name: Build the site with Jekyll
+        run: |
+          bundle exec jekyll build --destination public
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
