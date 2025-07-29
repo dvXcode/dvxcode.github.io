@@ -6,7 +6,7 @@ github_username: dvXcode
 minimal_mistakes_skin: air
 search: true
 
-permalink: /:categories/:title/
+permalink: /:title/
 
 # Build settings
 markdown: kramdown
