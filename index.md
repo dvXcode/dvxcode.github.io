@@ -9,4 +9,6 @@ cta:
   - text: "Read the Blog"
     url: /blog/
 ---
-Welcome to **Volovyk ENK** — your Norwegian partner for enterprise-grade cloud and cross-platform development. Explore our consulting services, dive into expert insights in our blog, or [get in touch](/contact/) today.
+
+Welcome to **Volovyk ENK** — your Norwegian partner for enterprise-grade cloud and cross-platform development.  
+Explore our [Services](/products/) or drop us a line on our [Contact](/contact/) page.
