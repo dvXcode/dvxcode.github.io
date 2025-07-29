@@ -11,5 +11,5 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-emoji"
   gem "jekyll-include-cache"
-  # any other plugins…
+  gem "jekyll-remote-theme"
 end
