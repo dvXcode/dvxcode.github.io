@@ -20,7 +20,7 @@ timezone: Europe/Oslo
 collections:
   products:
     output: true
-    permalink: /products/:slug/
+    permalink: /products/:name/
 
 # Include pages folder
 include:
