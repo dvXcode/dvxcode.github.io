@@ -25,6 +25,8 @@ include:
   - _pages
 
 # Plugins\plugins:
+plugins:
+  - jekyll-remote-theme
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
