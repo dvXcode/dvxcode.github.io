@@ -1,9 +1,6 @@
 main:
-  - name: "About"
-    url: "/about/"
+  - name: "Company"
+    url: "/company/"
     weight: 2
-  - name: "Contact"
-    url: "/contact/"
-    weight: 3
 
 footer: []
