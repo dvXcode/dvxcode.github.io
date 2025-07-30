@@ -5,19 +5,7 @@ description: 'Volovyk ENK provides consulting in Azure, .NET Core, Delphi, Dart 
 
 
 home: 
-  limit_services: 6
-
-collections:
-  services:
-    output: true
-    sort_by: weight
-
-defaults:
-  - scope:
-      path: ""
-      type: "services"
-    values:
-      layout: "service"
+  limit_services: 0
 
 sass:
   style: compressed # possible values: nested expanded compact compressed
