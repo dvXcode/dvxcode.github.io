@@ -1,93 +1,52 @@
-# Site settings
-title: "Volovyk ENK"
-email: "volovikdanil@gmail.com"
-description: "Volovyk ENK provides consulting in Azure, .NET Core, Delphi, Dart & Flutter, plus startup and mobile app development from Bergen, Norway."
-github_username: dvXcode
-minimal_mistakes_skin: air
-search: true
+baseurl: ''
+permalink: pretty
+title: 'Volovyk ENK'
+description: 'Volovyk ENK provides consulting in Azure, .NET Core, Delphi, Dart & Flutter, plus startup and mobile app development from Bergen, Norway.'
 
-permalink: /:title/
+logo:
+  mobile: "images/logo/logo-mobile.svg"
+  mobile_height: "32px"
+  mobile_width: "32px"
+  desktop: "images/logo/logo.svg"
+  desktop_height: "32px"
+  desktop_width: "120px"
 
-# Build settings
-markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
-# permalink removed to avoid basename key errors, use default post permalinks or set per-collection
-paginate: 5
-paginate_path: /blog/page:num/
-timezone: Europe/Oslo
+home: 
+  limit_services: 6
 
-# Collections for products (services)
 collections:
-  products:
+  services:
     output: true
-    permalink: /products/:name/
+    sort_by: weight
+  team:
+    output: true
 
-# Include pages folder
-include:
-  - _pages
-
-# Plugins
-plugins:
-  - jekyll-remote-theme
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-include-cache
-
-# Author info
-author:
-  name: "Dan Volovyk"
-  avatar: "/assets/images/bio-photo.jpg"
-  bio: "Tech-savvy programmer (MSc) specializing in Azure, .NET, Delphi, Dart & Flutter. Founder of multiple startups and mobile apps."
-  links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://volovyk.dev/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/dvXcode"
-
-# Footer links
-footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/dvXcode"
-
-# Defaults for layouts
 defaults:
-  # Blog posts
   - scope:
       path: ""
-      type: posts
+      type: "services"
     values:
-      layout: single
-      author_profile: false
-      read_time: true
-      share: true
-
-  # Pages (About & Contact)
-  - scope:
-      path: "_pages"
-      type: pages
-    values:
-      layout: single
-      author_profile: false
-
-  # Products collection
+      layout: "service"
   - scope:
       path: ""
-      type: products
+      type: "team"
     values:
-      layout: single
-      author_profile: false
-      share: false
-      comments: false
+      layout: "team"
 
-# Archive settings
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
+sass:
+  style: compressed # possible values: nested expanded compact compressed
+
+plugins:
+  - jekyll-environment-variables
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE.md
+  - LICENSE
+  - README.md

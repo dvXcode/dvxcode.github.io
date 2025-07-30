@@ -1,7 +1,13 @@
 ---
+title: Volovyk ENK
 layout: home
-author_profile: true
+description: Azure, .NET Core, Delphi, Dart & Flutter consulting services from Bergen, Norway.
+intro_image: "images/illustrations/pointing.svg"
+intro_image_absolute: true
+intro_image_hide_on_mobile: true
+show_call_box: true
 ---
 
-Welcome to **Volovyk ENK**—your Norwegian partner for enterprise cloud and cross‐platform solutions.  
-Explore our [Services](/products/) or learn more [About us](/about/).
+# Professional Software Consulting
+
+Volovyk ENK delivers scalable, maintainable solutions for modern software challenges. Based in Bergen, Norway, we specialize in cloud-native development and cross-platform solutions.
