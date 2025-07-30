@@ -7,8 +7,6 @@ bodyClass: page-about
 
 **Volovyk ENK** is a Norwegian software consulting company specializing in modern cloud and cross-platform development.
 
-![Software Consulting](/images/thom-holmes-Lrfw0U_o9I0-unsplash.jpg)
-
 # Company Information
 
 **Volovyk ENK**  
