@@ -3,13 +3,6 @@ permalink: pretty
 title: 'Volovyk ENK'
 description: 'Volovyk ENK provides consulting in Azure, .NET Core, Delphi, Dart & Flutter, plus startup and mobile app development from Bergen, Norway.'
 
-logo:
-  mobile: "images/logo/logo-mobile.svg"
-  mobile_height: "32px"
-  mobile_width: "32px"
-  desktop: "images/logo/logo.svg"
-  desktop_height: "32px"
-  desktop_width: "120px"
 
 home: 
   limit_services: 6
