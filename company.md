@@ -5,15 +5,13 @@ description: Volovyk - Norwegian Software Consulting Company
 bodyClass: page-company
 ---
 
-# Volovyk
-
 **Volovyk** is a Norwegian software consulting company specializing in modern cloud and cross-platform development.
 
 ## Company Registration
 
 **Legal Entity Name:** Volovyk  
-**Organisasjonsnummer:** 929516400
-**D-U-N-S Number:** 347510592
+**Organisasjonsnummer:** 929516400  
+**D-U-N-S Number:** 347510592  
 **Adresse:** Ytrebygdsvegen 11, SØREIDGREND, NO 5251  
 **Organisasjonsform:** Enkeltpersonforetak (ENK)  
 **Næringskode:** 62.020 Konsulentvirksomhet tilknyttet informasjonsteknologi
