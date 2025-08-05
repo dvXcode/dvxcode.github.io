@@ -12,7 +12,8 @@ bodyClass: page-company
 ## Company Registration
 
 **Legal Entity Name:** Volovyk  
-**Organisasjonsnummer:** 929516400  
+**Organisasjonsnummer:** 929516400
+**D-U-N-S Number:** 347510592
 **Adresse:** Ytrebygdsvegen 11, SØREIDGREND, NO 5251  
 **Organisasjonsform:** Enkeltpersonforetak (ENK)  
 **Næringskode:** 62.020 Konsulentvirksomhet tilknyttet informasjonsteknologi
