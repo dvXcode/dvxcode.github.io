@@ -1,5 +1,5 @@
 ---
-title: Volovyk ENK
+title: Volovyk
 layout: home
 description: Norwegian software consulting company - Azure, .NET Core, Delphi, Dart & Flutter development services.
 intro_image: "images/illustrations/pointing.svg"
@@ -10,4 +10,4 @@ show_call_box: true
 
 # Professional Software Consulting
 
-Volovyk ENK delivers scalable, maintainable solutions for modern software challenges. Based in Norway, we specialize in cloud-native development and cross-platform solutions.
+Volovyk delivers scalable, maintainable solutions for modern software challenges. Based in Norway, we specialize in cloud-native development and cross-platform solutions.
