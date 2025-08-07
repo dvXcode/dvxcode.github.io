@@ -52,7 +52,7 @@ Based in Norway, we bring Scandinavian quality and reliability to every project.
 Ytrebygdsvegen 11  
 SØREIDGREND, NO 5251
 
-**Email:** volovikdanil@gmail.com
+**Email:** dan@volovyk.dev
 
 ## Availability
 
