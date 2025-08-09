@@ -9,11 +9,11 @@ case $MODE in
     "construction")
         echo "🚧 Switching to UNDER CONSTRUCTION mode..."
         if [ -f "index.md.backup" ]; then
-            cp index.md index.md.live
-            echo "✅ Current site backed up as index.md.live"
+            cp index.html index.html.live
+            echo "✅ Current site backed up as index.html.live"
         fi
         
-        # The under construction content is already in index.md
+        # The under construction content is already in index.html
         echo "✅ Under construction page is now active"
         echo "📝 Your site will show the maintenance page"
         ;;
@@ -21,12 +21,12 @@ case $MODE in
     "live")
         echo "🌐 Switching to LIVE mode..."
         if [ -f "index.md.backup" ]; then
-            cp index.md.backup index.md
+            cp index.md.backup index.html
             echo "✅ Live site restored from backup"
             echo "📝 Your original site is now active"
         else
             echo "❌ No backup found (index.md.backup)"
-            echo "Please restore your original index.md manually"
+            echo "Please restore your original index.html manually"
         fi
         ;;
         
@@ -41,6 +41,7 @@ case $MODE in
         echo ""
         echo "Files:"
         echo "  index.md.backup - Original site backup"
-        echo "  index.md.live   - Live site backup (when in construction mode)"
+        echo "  index.html.live - Live site backup (when in construction mode)"
+        echo "  index.html      - Current active homepage"
         ;;
 esac

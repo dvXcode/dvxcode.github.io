@@ -39,9 +39,9 @@ The `site-mode.sh` script allows you to easily switch between live and maintenan
 
 #### File Structure
 
-- `index.md` - Current active homepage
+- `index.html` - Current active homepage
 - `index.md.backup` - Original site backup (created automatically)
-- `index.md.live` - Live site backup (created when switching to construction mode)
+- `index.html.live` - Live site backup (created when switching to construction mode)
 - `site-mode.sh` - Mode switcher script
 
 #### Manual Mode Switching
@@ -50,13 +50,13 @@ If you prefer manual control:
 
 **Enable maintenance mode:**
 ```bash
-cp index.md index.md.live
-# Replace index.md content with under construction HTML
+cp index.html index.html.live
+# Replace index.html content with under construction HTML
 ```
 
 **Restore live site:**
 ```bash
-cp index.md.backup index.md
+cp index.md.backup index.html
 ```
 
 ### Search Engine Protection
