@@ -1,0 +1,20 @@
+# Additional server-level protection against indexing
+# This works on Apache servers (GitHub Pages uses different servers, but good to have)
+
+<IfModule mod_headers.c>
+    # Send X-Robots-Tag header to prevent indexing
+    Header set X-Robots-Tag "noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate"
+</IfModule>
+
+# Block common crawler user agents
+<RequireAll>
+    Require all granted
+    Require not expr "%{HTTP_USER_AGENT} =~ /googlebot/i"
+    Require not expr "%{HTTP_USER_AGENT} =~ /bingbot/i"
+    Require not expr "%{HTTP_USER_AGENT} =~ /slurp/i"
+    Require not expr "%{HTTP_USER_AGENT} =~ /duckduckbot/i"
+    Require not expr "%{HTTP_USER_AGENT} =~ /baiduspider/i"
+    Require not expr "%{HTTP_USER_AGENT} =~ /yandexbot/i"
+    Require not expr "%{HTTP_USER_AGENT} =~ /facebookexternalhit/i"
+    Require not expr "%{HTTP_USER_AGENT} =~ /twitterbot/i"
+</RequireAll>

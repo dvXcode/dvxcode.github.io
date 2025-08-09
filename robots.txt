@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /
+
+# Block all crawlers from the entire site
+# This prevents indexing by Google, Bing, Yahoo, and other search engines

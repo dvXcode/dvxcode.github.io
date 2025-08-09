@@ -3,6 +3,8 @@ permalink: pretty
 title: 'Volovyk'
 description: 'Volovyk provides consulting in Azure, .NET Core, Delphi, Dart & Flutter, plus startup and mobile app development from Norway.'
 
+# Prevent search engine indexing
+robots: noindex, nofollow
 
 home: 
   limit_services: 0
