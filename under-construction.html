@@ -13,53 +13,59 @@
         }
         
         body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #1a1a2e;
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             color: white;
+            margin: 0;
+            overflow: hidden;
         }
         
         .container {
             text-align: center;
-            max-width: 600px;
-            padding: 40px 20px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+            max-width: 500px;
+            padding: 60px 40px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
         }
         
         .logo {
-            font-size: 3rem;
-            font-weight: bold;
-            margin-bottom: 20px;
+            font-size: 2.2rem;
+            font-weight: 600;
+            margin-bottom: 24px;
             color: #fff;
+            letter-spacing: 2px;
         }
         
         .title {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
+            font-size: 2rem;
+            margin-bottom: 16px;
             color: #fff;
+            font-weight: 300;
         }
         
         .subtitle {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            opacity: 0.9;
-            line-height: 1.6;
+            font-size: 1rem;
+            margin-bottom: 40px;
+            opacity: 0.8;
+            line-height: 1.5;
+            color: #e0e0e0;
         }
         
         .spinner {
-            border: 4px solid rgba(255, 255, 255, 0.3);
+            border: 3px solid rgba(255, 255, 255, 0.2);
             border-radius: 50%;
-            border-top: 4px solid #fff;
-            width: 60px;
-            height: 60px;
-            animation: spin 2s linear infinite;
-            margin: 30px auto;
+            border-top: 3px solid #fff;
+            width: 40px;
+            height: 40px;
+            animation: spin 1.5s linear infinite;
+            margin: 0 auto;
         }
         
         @keyframes spin {
@@ -67,34 +73,19 @@
             100% { transform: rotate(360deg); }
         }
         
-        .contact {
-            margin-top: 30px;
-            font-size: 1rem;
-            opacity: 0.8;
-        }
-        
-        .contact a {
-            color: #fff;
-            text-decoration: none;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-            transition: all 0.3s ease;
-        }
-        
-        .contact a:hover {
-            border-bottom-color: #fff;
-            opacity: 1;
-        }
-        
         @media (max-width: 768px) {
-            .title {
-                font-size: 2rem;
-            }
-            .subtitle {
-                font-size: 1rem;
-            }
             .container {
                 margin: 20px;
-                padding: 30px 15px;
+                padding: 40px 20px;
+            }
+            .logo {
+                font-size: 1.8rem;
+            }
+            .title {
+                font-size: 1.6rem;
+            }
+            .subtitle {
+                font-size: 0.9rem;
             }
         }
     </style>
@@ -108,9 +99,6 @@
             Our new website will be ready soon.
         </p>
         <div class="spinner"></div>
-        <div class="contact">
-            Need to reach us? Contact: <a href="mailto:info@volovyk.com">info@volovyk.com</a>
-        </div>
     </div>
 </body>
 </html>
