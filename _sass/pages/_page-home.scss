@@ -11,20 +11,36 @@
     background-clip: text;
     font-weight: 700;
     letter-spacing: -0.02em;
+    margin-bottom: 24px;
   }
   
   .intro h2 {
     color: #2f2f41;
     font-weight: 600;
-    margin-top: 20px;
-    margin-bottom: 25px;
+    margin-top: 24px;
+    margin-bottom: 20px;
+    line-height: 1.4;
   }
   
   .intro p {
     font-size: 1.1rem;
-    line-height: 1.6;
+    line-height: 1.7;
     color: #5c5a5a;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
+    
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    
+    @include media-breakpoint-up(md) {
+      font-size: 1.15rem;
+      width: 90%;
+    }
+  }
+  
+  .intro strong {
+    color: #e5261f;
+    font-weight: 600;
   }
   
   .strip-grey {
