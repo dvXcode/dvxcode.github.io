@@ -2,11 +2,27 @@
   background: white;
   background-repeat: no-repeat;
 }
+
 .strip-white {
   background-color: white;
 }
+
 .strip-grey {
-  background-color: $white-offset;
+  background-color: #fafafa;
+  border-top: 1px solid #f0f0f0;
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(135deg, $primary, $secondary);
+    border-radius: 2px;
+  }
 }
 .strip-diagonal {
   transform: skewY(5deg);

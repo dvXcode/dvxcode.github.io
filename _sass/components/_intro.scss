@@ -2,41 +2,56 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   overflow: hidden;
+  min-height: 70vh;
+  
   @include media-breakpoint-up(md) {
-    padding-top: 140px;
-    padding-bottom: 140px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
+  
   h1 {
     color: $black;
-    font-size: 42px;
-    font-weight: bold;
-    line-height: 1.2;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    
     @include media-breakpoint-up(md) {
-      width: 80%;
-      font-size: 48px;
+      font-size: 56px;
     }
+    
     @include media-breakpoint-up(lg) {
-      font-size: 50px;
+      font-size: 64px;
     }
   }
+  
   h2 {
-    width: 80%;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 1.4;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     color: $black;
-    font-family: $font-family-base;
-  }
-  p {
-    font-size: 1.2rem;
-    font-weight: light;
-    line-height: 1.5;
-    color: $steel;
+    font-family: $font-family-heading;
+    font-weight: 400;
+    
     @include media-breakpoint-up(md) {
-      width: 80%;
+      width: 90%;
+      font-size: 1.5rem;
+    }
+  }
+  
+  p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: $steel;
+    margin-bottom: 0;
+    
+    @include media-breakpoint-up(md) {
+      width: 85%;
+      font-size: 1.2rem;
     }
   }
 }
@@ -44,4 +59,29 @@
 .intro-small {
   padding-top: 100px;
   padding-bottom: 30px;
+  min-height: auto;
+}
+
+.intro-image {
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0 10px 20px rgba(229, 38, 31, 0.1));
+  
+  &.intro-image-absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    
+    @include media-breakpoint-up(md) {
+      max-width: 80%;
+    }
+  }
+  
+  &.intro-image-hide-mobile {
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
 }

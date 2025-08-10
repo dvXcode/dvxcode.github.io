@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "title": "Azure Cloud Development",
+    "description": "Expert cloud architecture and development using Azure services. Scalable, secure, and cost-effective solutions for modern applications.",
+    "image": {
+      "url": "images/features/noun_3d modeling_1885342.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": ".NET Core & Microservices",
+    "description": "Modern application development with .NET Core, containerization, and microservices architecture for enterprise-grade solutions.",
+    "image": {
+      "url": "images/features/noun_The Process_1885341.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "Cross-Platform Mobile",
+    "description": "Flutter and Dart development for iOS and Android. Single codebase, native performance, and beautiful user experiences.",
+    "image": {
+      "url": "images/features/noun_branding_1885335.svg",
+      "width": 80,
+      "height": 80
+    }
+  }
+]
