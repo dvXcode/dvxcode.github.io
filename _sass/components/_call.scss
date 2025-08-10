@@ -1,60 +1,175 @@
 .call {
   position: relative;
+  background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 32px;
+  margin-top: 40px;
   overflow: hidden;
-  background-color: $white-offset;
-  border-radius: 4px;
-  // box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  z-index: 2;
-  @include media-breakpoint-up(sm) {
+  transition: all 0.3s ease;
+  
+  &:hover {
+    border-color: rgba(229, 38, 31, 0.2);
+    box-shadow: 0 8px 25px rgba(229, 38, 31, 0.08);
+  }
+  
+  .call-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .call-header {
+    text-align: center;
+    margin-bottom: 28px;
+    
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #1f2937;
+      margin-bottom: 8px;
+      font-family: $font-family-heading;
+      
+      @include media-breakpoint-up(md) {
+        font-size: 1.75rem;
+      }
+    }
+    
+    p {
+      font-size: 1rem;
+      color: #6b7280;
+      margin-bottom: 0;
+      line-height: 1.5;
+      
+      @include media-breakpoint-up(md) {
+        font-size: 1.1rem;
+      }
+    }
+  }
+  
+  .call-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .call-box-top {
-    flex: 1 0 auto;
-    padding: 20px;
-    @include media-breakpoint-up(md) {
-    }
-  }
-  .call-box-bottom {
-    flex: auto;
-    padding: 20px;
-    border-top: 1px solid darken($white-offset, 5%);
+    
     @include media-breakpoint-up(sm) {
-      flex: 0 0 auto;
-      border: none;
+      flex-direction: row;
+      justify-content: center;
+      gap: 16px;
     }
   }
-  .call-name {
-    font-size: 1.1rem;
-    font-weight: bold;
-  }
-  .call-phone {
-    margin-bottom: 5px;
-  }
-  .call-email {
-    a {
-      color: $black;
+  
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    white-space: nowrap;
+    
+    .btn-icon {
+      transition: transform 0.3s ease;
+    }
+    
+    &:hover .btn-icon {
+      transform: translateX(2px);
+    }
+    
+    &.btn-primary {
+      background: linear-gradient(135deg, #e5261f, #f88379);
+      color: white;
+      
+      &:hover {
+        background: linear-gradient(135deg, #d11e18, #f67168);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(229, 38, 31, 0.3);
+      }
+    }
+    
+    &.btn-secondary {
+      background: white;
+      color: #4b5563;
+      border-color: #d1d5db;
+      font-size: 0.9rem;
+      
+      &:hover {
+        background: #f9fafb;
+        border-color: #9ca3af;
+        color: #374151;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
     }
   }
-  strong {
-    font-weight: bold;
-  }
-  svg {
-    fill: lighten($secondary, 40%);
+  
+  .call-decoration {
     position: absolute;
-    bottom: -9px;
+    top: 0;
     right: 0;
-    width: 100px;
-    height: 100px;
-    @include media-breakpoint-up(sm) {
-      width: 120px;
-      height: 120px;
+    width: 120px;
+    height: 120px;
+    opacity: 0.05;
+    overflow: hidden;
+    z-index: 1;
+    
+    .call-pattern {
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, #e5261f, #f88379);
+      border-radius: 50%;
+      
+      &::before {
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(135deg, #f88379, #e5261f);
+        border-radius: 50%;
+      }
+      
+      &::after {
+        content: '';
+        position: absolute;
+        top: 60px;
+        left: 10px;
+        width: 20px;
+        height: 20px;
+        background: linear-gradient(135deg, #e5261f, #f88379);
+        border-radius: 50%;
+      }
+    }
+  }
+  
+  @include media-breakpoint-down(sm) {
+    padding: 24px 20px;
+    margin-top: 30px;
+    
+    .call-header {
+      margin-bottom: 24px;
+      
+      h3 {
+        font-size: 1.3rem;
+      }
+      
+      p {
+        font-size: 0.95rem;
+      }
+    }
+    
+    .btn {
+      width: 100%;
+      justify-content: center;
+      padding: 14px 24px;
     }
   }
 }
