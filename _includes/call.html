@@ -1,33 +1,20 @@
-<div class="call">
-  <div class="call-content">
-    <div class="call-header">
-      <h3>Ready to Start Your Project?</h3>
-      <p>Let's discuss how we can help transform your ideas into reality.</p>
-    </div>
+<div class="call-to-action">
+  <div class="cta-content">
+    <h3 class="cta-title">Ready to Transform Your Ideas?</h3>
+    <p class="cta-subtitle">Let's build something amazing together. Get in touch to discuss your project.</p>
     
-    <div class="call-actions">
+    <div class="cta-buttons">
       {% if include.show_button %}
-        <a href="{{ site.data.contact.contact_button_link }}" class="btn btn-primary">
-          <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
-            <path d="M22 12L18 8M22 12L18 16M22 12H2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          </svg>
-          Get In Touch
+        <a href="{{ site.data.contact.contact_button_link }}" class="cta-btn cta-btn-primary">
+          Start Your Project
         </a>
       {% endif %}
       
       {% if site.data.contact.email %}
-        <a href="mailto:{{ site.data.contact.email }}" class="btn btn-secondary">
-          <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none">
-            <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2"/>
-            <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2"/>
-          </svg>
+        <a href="mailto:{{ site.data.contact.email }}" class="cta-btn cta-btn-secondary">
           {{ site.data.contact.email }}
         </a>
       {% endif %}
     </div>
-  </div>
-  
-  <div class="call-decoration">
-    <div class="call-pattern"></div>
   </div>
 </div>
