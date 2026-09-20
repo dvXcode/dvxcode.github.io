@@ -26,3 +26,4 @@ exclude:
   - LICENSE.md
   - LICENSE
   - README.md
+  - design-qa.md

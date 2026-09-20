@@ -69,6 +69,25 @@ The site includes multiple layers of search engine protection:
 
 ## Development
 
+The construction page uses plain HTML, CSS, and JavaScript. It needs no build step or JavaScript libraries.
+
+To preview this page:
+
+```bash
+python3 -m http.server 4173 --bind 127.0.0.1
+```
+
+Open `http://127.0.0.1:4173` in your browser.
+
+- `assets/css/construction.css` controls the page layout and colors.
+- `assets/js/signal-animation.js` draws the pixel ribbon with Canvas 2D.
+- The ribbon cycles between the signal scene and bracket waves. Each scene holds for seven seconds, then crossfades for three seconds.
+- Square and diamond heads follow the signal paths, with segmented tails that turn at each corner.
+- The page uses the dark palette from [Herdr](https://herdr.dev/). CSS color variables also supply the canvas colors.
+- The animation runs at about 24 frames per second. It pauses when the tab is hidden.
+- The animation plays automatically. Reduced-motion settings select a still frame.
+- Keep `index.html` and `under-construction.html` in sync when you edit the construction page.
+
 To run the site locally:
 
 ```bash
